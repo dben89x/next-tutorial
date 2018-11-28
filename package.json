@@ -8,7 +8,7 @@
     "build": "next build",
     "prod_start": "NODE_ENV=production node server.js",
     "start": "next start -p 8000",
-    "heroku-postbuild": "npm run build",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "express": "^4.16.4",
