@@ -11,6 +11,8 @@ const Post = ({ item }) => (
 Post.getInitialProps = async ({ query }) => {
   console.log('XXX', query.id)
   const db = await loadDB()
+  console.log(db)
+  console.log(db.child)
   let item = await db.child('item').child(query.id).once('value')
   item = item.val()
 
